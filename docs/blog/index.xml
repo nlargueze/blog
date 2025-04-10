@@ -2,25 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Nick Labs</title>
-    <link>https://example.com/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content in Blog on Nick Labs</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2025, Nick.</copyright>
-    <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.com/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Post 2</title>
-      <link>https://example.com/post-2/</link>
-      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/post-2/</guid>
-      <description>&lt;p&gt;Lore ipsum&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Mon, 10 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1st post !</title>
-      <link>https://example.com/1st-post/</link>
+      <link>http://localhost:1313/1st-post/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/1st-post/</guid>
+      <guid>http://localhost:1313/1st-post/</guid>
       <description>&lt;p&gt;This is my 1st post&lt;/p&gt;&#xA;&lt;h1 id=&#34;goals&#34;&gt;Goals&lt;/h1&gt;&#xA;&lt;p&gt;Write down things&lt;/p&gt;&#xA;&lt;h1 id=&#34;non-goals&#34;&gt;Non-goals&lt;/h1&gt;&#xA;&lt;p&gt;Be polished&lt;/p&gt;</description>
     </item>
   </channel>
