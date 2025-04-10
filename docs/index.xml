@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on Nick Labs</title>
-    <link>https://example.com/blog/</link>
-    <description>Recent content in Blog on Nick Labs</description>
+    <title>Home on Nick Labs</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Nick Labs</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2025, Nick.</copyright>
     <lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1st post !</title>
-      <link>https://example.com/1st-post/</link>
+      <link>http://localhost:1313/1st-post/</link>
       <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.com/1st-post/</guid>
+      <guid>http://localhost:1313/1st-post/</guid>
       <description>&lt;p&gt;This is my 1st post&lt;/p&gt;&#xA;&lt;h1 id=&#34;goals&#34;&gt;Goals&lt;/h1&gt;&#xA;&lt;p&gt;Write down things&lt;/p&gt;&#xA;&lt;h1 id=&#34;non-goals&#34;&gt;Non-goals&lt;/h1&gt;&#xA;&lt;p&gt;Be polished&lt;/p&gt;</description>
     </item>
   </channel>

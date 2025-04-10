@@ -11,6 +11,9 @@ author = "Nick"
 copyright = "Copyright © 2025, Nick."
 languageCode = "en-US"
 
+# Set your build directory to 'docs'
+publishDir = "docs"
+
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
 
