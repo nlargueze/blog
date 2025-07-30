@@ -1,4 +1,22 @@
-{% extends "base.html" %} {% block content %}
-<h1 class="title">{{ page.title }}</h1>
-<p class="subtitle"><strong>{{ page.date }}</strong></p>
-{{ page.content | safe }} {% endblock content %}
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} - Nick's Blog{% endblock title %}
+
+{% block content %}
+<article>
+    <header>
+        <h1>{{ page.title }}</h1>
+        {% if page.date %}
+        <div class="post-meta">{{ page.date | date(format="%B %d, %Y") }}</div>
+        {% endif %}
+    </header>
+    
+    <div class="post-content">
+        {{ page.content | safe }}
+    </div>
+</article>
+
+<nav style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+    <a href="{{ get_url(path='') }}">← Home</a>
+</nav>
+{% endblock content %}

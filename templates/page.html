@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block title %}{{ page.title }} - Nick Largueze {%
+endblock title %} {% block content %}
+<article>
+    <div class="post-content">{{ page.content | safe }}</div>
+</article>
+
+<nav
+    style="
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border-color);
+    "
+>
+    <a href="{{ get_url(path='') }}">← Home</a>
+</nav>
+{% endblock content %}

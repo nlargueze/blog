@@ -2,14 +2,77 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>MyBlog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{% block title %}Nick Largueze{% endblock title %}</title>
+        <link rel="stylesheet" href="{{ get_url(path='style.css') }}" />
     </head>
 
     <body>
-        <section class="section">
-            <div class="container">
-                {% block content %} {% endblock content %}
-            </div>
-        </section>
+        <nav>
+            <a href="{{ get_url(path='') }}" class="site-title">
+                Nick Largueze
+            </a>
+            <ul class="nav-menu">
+                <li><a href="{{ get_url(path='about') }}">About</a></li>
+                <li><a href="{{ get_url(path='now') }}">Now</a></li>
+                <li>
+                    <button
+                        class="theme-toggle"
+                        onclick="toggleTheme()"
+                        aria-label="Toggle dark mode"
+                    >
+                        ○
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <main>{% block content %} {% endblock content %}</main>
+
+        <script>
+            // Theme toggle functionality
+            function toggleTheme() {
+                const html = document.documentElement;
+                const currentTheme = html.getAttribute("data-theme");
+                const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+                html.setAttribute("data-theme", newTheme);
+                localStorage.setItem("theme", newTheme);
+
+                // Update button text
+                const button = document.querySelector(".theme-toggle");
+                button.textContent = newTheme === "dark" ? "●" : "○";
+            }
+
+            // Load saved theme or default to light
+            function loadTheme() {
+                const savedTheme = localStorage.getItem("theme") || "light";
+                const html = document.documentElement;
+                html.setAttribute("data-theme", savedTheme);
+
+                // Update button text
+                const button = document.querySelector(".theme-toggle");
+                if (button) {
+                    button.textContent = savedTheme === "dark" ? "●" : "○";
+                }
+            }
+
+            // Keyboard shortcut for theme toggle (press 'd')
+            document.addEventListener("keydown", function (e) {
+                if (
+                    e.key === "d" &&
+                    !e.ctrlKey &&
+                    !e.metaKey &&
+                    !e.altKey &&
+                    document.activeElement.tagName !== "INPUT" &&
+                    document.activeElement.tagName !== "TEXTAREA"
+                ) {
+                    toggleTheme();
+                }
+            });
+
+            // Load theme on page load
+            loadTheme();
+        </script>
     </body>
 </html>
