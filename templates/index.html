@@ -1,24 +1,21 @@
 {% extends "base.html" %} {% block title %}Nick Largueze{% endblock title %} {%
 block content %}
 <div class="intro">
-    <p>
-        I write about technology, programming, and ideas that interest me. This
-        is a collection of my thoughts and experiments.
-    </p>
+  <p>{{ section.content | safe }}</p>
 </div>
 
 <section>
-    <h2 class="section-title">Writing</h2>
-    {% set blog_section = get_section(path="blog/_index.md") %}
-    <ul class="simple-post-list">
-        {% for page in blog_section.pages %}
-        <li class="simple-post-item">
-            <a href="{{ page.permalink }}">
-                {% if page.date %}{{ page.date | date(format="%Y-%m-%d") }} {%
-                endif %}{{ page.title }}
-            </a>
-        </li>
-        {% endfor %}
-    </ul>
+  <h2 class="section-title">Writing</h2>
+  {% set blog_section = get_section(path="blog/_index.md") %}
+  <ul class="simple-post-list">
+    {% for page in blog_section.pages %}
+    <li class="simple-post-item">
+      <a href="{{ page.permalink }}">
+        {% if page.date %}{{ page.date | date(format="%Y-%m-%d") }} {% endif
+        %}{{ page.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
 </section>
 {% endblock content %}

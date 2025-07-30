@@ -3,38 +3,23 @@ title = "Now"
 template = "page.html"
 +++
 
-# Now
+# What I'm doing now
 
-I'd love to hear from you! Whether you have questions, want to discuss ideas, or just say hello, feel free to reach out.
+*This is a [now page](https://nownownow.com/about), inspired by Derek Sivers. It's a living document of what I'm currently focused on.*
 
-## How to Reach Me
+## Current Projects
 
-**Email**: [your-email@example.com](mailto:your-email@example.com)
+- Working on personal blog with Zola
+- Exploring static site generators and modern web development
+- Learning about minimalist design principles
 
-**Social Media**:
-- Twitter: [@your-handle](https://twitter.com/your-handle)
-- LinkedIn: [Your Name](https://linkedin.com/in/your-profile)
-- GitHub: [@your-username](https://github.com/your-username)
+## Reading
 
-## What I'm Interested in Discussing
+- Various technical articles and documentation
+- Exploring best practices in web development
 
-- Software development and engineering practices
-- Web technologies and modern development
-- Open source projects and collaborations
-- Technology trends and innovations
-- Minimalist design and user experience
+## Learning
 
-## Response Time
-
-I typically respond to emails within 24-48 hours. If you don't hear back from me, please don't hesitate to follow up!
-
-## Professional Inquiries
-
-For professional opportunities or consulting inquiries, please include:
-- Brief description of your project or role
-- Timeline and scope
-- Budget range (if applicable)
-
----
-
-*This page was last updated: January 2024*
+- Zola static site generator
+- Modern CSS techniques
+- Minimalist web design
